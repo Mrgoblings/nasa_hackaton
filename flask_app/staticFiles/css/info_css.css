@@ -1,0 +1,100 @@
+li, a, button{
+
+    color:aliceblue;
+    text-decoration: none;
+    font-size: 16px;
+    font-family:sans-serif;
+    transition: 0.4s ease 0s;
+}
+header{
+   display: flex;
+   justify-content:space-between;
+   align-items:  center;
+   width: 100%;
+   padding: 1% 0%;
+   background-color: #10101b;
+   top: 0;
+   left: 0;
+   right: 0;
+   position: fixed;
+}
+.Buttons {
+list-style: none;
+}
+
+.Buttons li {
+ display: inline-block;
+ padding:  0px 50px;
+}
+.Buttons li a:hover{
+    color:#532a96;
+    
+    }
+.Buttons li a:after{
+    content: "";
+    position: absolute;
+    background-color:#532a96;
+    height: 3px;
+    width: 0px;
+    bottom: 20px;
+    margin-left: -50px;
+    transition: 0.4s ease 0s;
+}
+.Buttons li a:hover:after{
+    content: "";
+    position: absolute;
+    background-color:#532a96;
+    height: 3px;
+    width: 75px;
+    bottom: 20px;
+    margin-left: -50px;
+}
+.button{
+    margin-right: 20px;
+    padding: 9px 20px;
+    background-color:#532a96;
+    border: hidden;
+    border-radius: 30px;
+    transition: 0.3s ease 0s;
+}
+.button:hover{
+    color:aliceblue;
+    border-radius: 30px;
+    outline-style: auto;
+    outline-color:aliceblue;
+    cursor: pointer;
+    background-color:rgba(83,42,150, 0.5)
+    
+}
+.logo{
+    margin-left: 20px;
+}
+.image{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;  
+}
+.Home_Text{
+    letter-spacing: 3px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-small;
+    margin-left: 15.4%;
+    width: 70%;
+    height: 400%;
+    margin-top:10%;
+    background-color:rgba(16,16,27,0.75);
+    color:aliceblue;
+
+}
+.Planet_Text{
+    text-align: left;
+    margin-left:4%;
+    margin-right: 40%;
+}

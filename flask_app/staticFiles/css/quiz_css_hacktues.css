@@ -1,0 +1,119 @@
+body{
+    background-image: linear-gradient(to left top, #29195e, #1f1752, #171547, #10133b, #0c0e2f, #190c2a, #210b25, #260b20, #350e19, #3d170d, #3c2401, #323204);
+    color:aliceblue;
+    height: 5px;
+    text-align: center;
+}
+    li, a, button{
+
+    color:aliceblue;
+    text-decoration: none;
+    font-size: 16px;
+    font-family:sans-serif;
+    transition: 0.4s ease 0s;
+}
+header{
+   display: flex;
+   justify-content:space-between;
+   align-items:  center;
+   width: 100%;
+   padding: 1% 0%;
+   background-color: #10101b;
+   top: 0;
+   left: 0;
+   right: 0;
+   position: fixed;
+}
+.Buttons {
+list-style: none;
+}
+
+.Buttons li {
+ display: inline-block;
+ padding:  0px 50px;
+}
+.Buttons li a:hover{
+    color:#532a96;
+    
+    }
+.Buttons li a:after{
+    content: "";
+    position: absolute;
+    background-color:#532a96;
+    height: 3px;
+    width: 0px;
+    bottom: 20px;
+    margin-left: -50px;
+    transition: 0.4s ease 0s;
+}
+.Buttons li a:hover:after{
+    content: "";
+    position: absolute;
+    background-color:#532a96;
+    height: 3px;
+    width: 75px;
+    bottom: 20px;
+    margin-left: -50px;
+}
+.button{
+    margin-right: 20px;
+    padding: 9px 20px;
+    background-color:#532a96;
+    border: hidden;
+    border-radius: 30px;
+    transition: 0.3s ease 0s;
+}
+.button:hover{
+    color:aliceblue;
+    border-radius: 30px;
+    outline-style: auto;
+    outline-color:aliceblue;
+    cursor: pointer;
+    background-color:rgba(83,42,150, 0.5)
+    
+}
+.logo{
+    margin-left: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.question{
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin-top: 10%;
+}
+.button_2{
+    font-family: sans-serif;
+    position:absolute;
+    background-color:#101b1b;
+    border-style:solid;
+    border-color: aliceblue;
+    border-radius: 30px;
+    padding: 18px 100px;
+}
+.button_2:hover{
+    outline-style: auto;
+    outline-color:aliceblue;
+    cursor:pointer;
+    background-color: rgba(3, 26, 46, 0.6);
+}
+#myVideo{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+.question{
+    background-color: #101b1b;
+    width:30% ;
+    padding:2% 0% ;
+    margin-left:522px;
+    margin-right:500px;
+    border-radius:40px;
+}
