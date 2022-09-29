@@ -5,7 +5,7 @@ app = Flask(__name__, template_folder="./htmls", static_folder='staticFiles')
 
 
 def take_question(number):
-    with open('questions.json') as file:
+    with open('staticFiles/questions.json', encoding="utf8") as file:
         text = json.loads(file.read())
         question = 'q' + str(number)
         return text['quiz'][question]
@@ -18,10 +18,10 @@ def index():
 
 @app.route("/quiz")
 def quiz():
-    question = take_question(0)
+    question = take_question(1)
     return render_template("quiz.html", question=question["question"],
-                           aswer_0=question["options"][0], aswer_1=question["options"][1],
-                           aswer_2=question["options"][2], aswer_3=question["options"][3])
+                           answer_0=question["options"][0], answer_1=question["options"][1],
+                           answer_2=question["options"][2], answer_3=question["options"][3])
 
 
 @app.route("/info")
